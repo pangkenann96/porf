@@ -1,80 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Example with Multiple Pages</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: #f5f5f5; /* Light gray background */
-        }
-        .navbar {
-            background-color: #333; /* Dark gray navigation bar */
-            color: #fff; /* White text */
-        }
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' d='M4 7h22v16H4V7zm16 8H4v2h16v-2z'/%3E%3C/svg%3E");
-        }
-        .bg-primary {
-            background-color: #337ab7 !important; /* Primary blue color */
-        }
-        .bg-secondary {
-            background-color: #e5e5e5 !important; /* Secondary gray color */
-        }
-        .flex-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .flex-item {
-            flex-basis: 30%;
-            padding: 20px;
-            border: 1px solid #ccc;
-            margin: 10px;
-        }
-    </style>
+	<title>Math Tutor for JC Students - Make Improvements</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content=" JC students who try hard but struggle to make improvements in math? Our math tutor is here to help!">
+	<meta name="author" content="Your Name">
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <h1 class="display-3">Bootstrap Example with Multiple Pages</h1>
-        <p class="lead">This is a simple example of a Bootstrap page with multiple pages.</p>
-    </div>
-    <script>
-        // Handle navigation to other pages
-        document.addEventListener("DOMContentLoaded", function() {
-            const navLinks = document.querySelectorAll("nav a");
-            navLinks.forEach(function(link) {
-                link.addEventListener("click", function(event) {
-                    event.preventDefault();
-                    const href = link.getAttribute("href");
-                    if (href === "#home") {
-                        // Do nothing, since we're already on the home page
-                    } else {
-                        window.location.href = href;
-                    }
-                });
-            });
-        });
-    </script>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Testimonials</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<h1>Math Tutor for JC Students - Make Improvements</h1>
+	</header>
+	<main>
+		<article>
+			<h2>Struggling with Math in JC?</h2>
+			<p>As a JC student, you know how important it is to excel in math. But despite trying hard, you may be struggling to make improvements. Our math tutor is here to help!</p>
+			<p>Our tutor has extensive experience in teaching math to JC students, and has a proven track record of helping students improve their grades and confidence. Whether you're struggling with algebra, geometry, or calculus, we can help you overcome your challenges and achieve your goals.</p>
+			<p>Our services include:</p>
+			<ul>
+				<li>One-on-one tutoring sessions</li>
+				<li>Customized lesson plans</li>
+				<li>Regular progress updates</li>
+			</ul>
+		</article>
+		<aside>
+			<h3>Why Choose Us?</h3>
+			<p>We understand that every student learns differently, which is why we offer flexible and personalized tutoring sessions. Our tutor is patient, encouraging, and dedicated to helping you succeed.</p>
+			<ul>
+				<li>We're experienced in teaching math to JC students</li>
+				<li>We offer flexible scheduling to fit your needs</li>
+				<li>We're dedicated to helping you achieve your goals</li>
+			</ul>
+		</aside>
+		<article>
+			<h2>Success Stories</h2>
+			<p>Don't just take our word for it! Here's what some of our past students have to say:</p>
+			<ul>
+				<li>"I was struggling with algebra, but my tutor helped me understand the concepts and I ended up getting an A!" - John</li>
+				<li>"I was hesitant to try tutoring, but my tutor made it fun and engaging. I'm now confident in my math skills!" - Emily</li>
+			</ul>
+		</article>
+	</main>
+	<footer>
+		<p>&copy; 2023 Math Tutor for JC Students - Make Improvements</p>
+		<p>Contact us at <a href="mailto:tutor@example.com">tutor@example.com</a> or <a href="tel:555-555-5555">555-555-5555</a> to schedule a tutoring session.</p>
+	</footer>
+	<script src="script.js"></script>
 </body>
 </html>
